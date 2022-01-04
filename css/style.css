@@ -7214,6 +7214,10 @@ h2 .h2 {
   font-size: 1rem;
   font-weight: 500; }
 
+.text-md--2 {
+  font-size: 1rem;
+  font-weight: 600; }
+
 .text-lg {
   font-size: 1.125rem;
   font-weight: 500; }
@@ -7809,15 +7813,21 @@ input + .slider:before {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
 
 .herobox {
-  height: 91.5vh; }
+  position: relative; }
+  .herobox-lg {
+    height: 91.5vh; }
+  .herobox-sm {
+    height: 329px; }
   .herobox-image {
-    background-image: url("../assets/images/background.png");
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 56vh; }
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    position: relative; }
+  .herobox-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .footer {
   padding: 3rem; }
