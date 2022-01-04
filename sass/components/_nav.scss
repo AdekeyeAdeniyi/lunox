@@ -1,0 +1,227 @@
+.nav{
+    &-lonux{
+        height: 108px;
+        position: relative;
+
+
+        .nav-item{
+            &:not(:last-child){
+                padding-right: 1rem;
+            }
+            
+            a{
+                color: darken($accent , 40%);
+                transition: all .3s;
+
+                &:hover{
+                    color: $accent;
+                }
+
+                svg{
+
+                    path{
+                        fill: darken($accent, 40);
+                    }
+                    &:hover{
+                        path{
+                            fill: $accent;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &-light{
+            
+            .nav-item{
+                &:not(:last-child){
+                    padding-right: 1rem;
+                }
+                
+                a{
+                    color: lighten($secondary , 40%);
+                    transition: all .3s;
+    
+                    &:hover{
+                        color: $secondary;
+                    }
+    
+                    svg{
+    
+                        path{
+                            fill: lighten($secondary , 40%);
+                        }
+                        &:hover{
+                            path{
+                                fill: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // nav circlular popup container for nav content
+    &-content{
+        display: none;
+        justify-content: center;
+        padding: 4rem 1rem;
+        position: fixed;
+        background-color: rgba($primary,.9);
+        backdrop-filter: blur(3px);
+        width: 50px;
+        height: 50px;
+        top: 6px;
+        right: 22px;
+        border-radius:50% ;
+        transition: all 1s;
+        padding-left: 18rem;
+        padding-right: 4rem;
+
+        @include respond(tab){
+            padding-left: 13rem;
+            
+        }
+        
+        
+        &.show{
+            display: flex;
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 100%;
+            width: 600px;
+            height: 600px;
+            z-index: 1000;
+            transition: all 1s;
+            animation: grow .5s ease-in-out ;
+            
+            // &::before{
+            //     content: '';
+            //     position: fixed;
+            //     top: -63px;
+            //     right: -59px;
+            //     border-radius: 0 0 0 100%;
+            //     width: 700px;
+            //     height: 700px;
+            //     transform: rotate(4deg);
+            //     background-color: rgba($primary, .5);
+            //     animation: grow .5s ease-in-out;
+            //     z-index: 999;
+
+            // }
+        }
+
+        .close{
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .nav-menu{
+            display: none;
+            width: 100%;
+        }
+
+        ul{
+
+            &.nav-social{
+                position: fixed;
+                bottom: 2rem;
+                right: 1rem;
+                .nav-item{
+                    padding: 0;
+                    a{
+                        color: $dark;
+                        transition: all .3s;
+                        font-size: 2rem;
+        
+                        svg{
+        
+                            path{
+                                fill: lighten($dark, 10);
+                            }
+                            &:hover{
+                                path{
+                                    fill: $dark;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            &.nav-gen{
+                .nav-item{
+                    &:not(:last-child){
+                        padding-bottom: 1rem;
+                    }
+                    
+                    a{
+                        color: $dark;
+                        transition: all .3s;
+                        font-size: 1.5rem;
+                        position: relative;
+                        transition: .3s;
+                        
+
+
+
+        
+                        &:hover{
+                            transition: .3s;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 16px;
+                                border-radius: 10px;
+                                width: 50px;
+                                height: 3px;
+                                /* transform: rotate(4deg); */
+                                background-color: $dark;
+                                animation: navHoverBefore .3s ease-in;
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                left: 75px;
+                                border-radius: 10px;
+                                width: 15px;
+                                height: 3px;
+                                /* transform: rotate(4deg); */
+                                background-color: $dark;
+                                animation: navHoverAfter .4s ease-in;
+                            }
+                        }
+        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// nav content toggler
+.navbar-lonux-toggler{
+    border: none;
+    background-color: transparent;
+    svg{
+        path{
+            stroke: $dark;
+        }
+    }
+
+    svg.light{
+        path{
+            stroke: $light;
+        }
+    }
+
+  
+    
+}

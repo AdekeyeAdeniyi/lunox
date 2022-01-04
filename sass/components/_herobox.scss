@@ -1,0 +1,13 @@
+.herobox{
+    height: 91.5vh;
+
+    &-image{
+        background-image: url('../assets/images/background.png');
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 56vh;
+    }
+}

@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// abstract
+@import 'abstract/mixins';
+
+// base
+@import 'base/base';
+@import 'base/typography';
+
+
+// components
+@import 'components/activity';
+@import 'components/actions';
+@import 'components/breadcrumb';
+@import 'components/bookings';
+@import 'components/cards';
+@import 'components/button';
+@import 'components/form';
+@import 'components/img';
+@import 'components/nav';
+@import 'components/rippleLoader';
+@import 'components/shop';
+@import 'components/setup';
+@import 'components/slider';
+@import 'components/table';
+@import 'components/upload';
+@import 'components/herobox';
+
+
+// layouts
+@import 'layouts/footer';
+@import 'layouts/sections';
+@import 'layouts/nav';
+
+
+// pages
+@import 'pages/auth';
+@import 'pages/blog';
+@import 'pages/dashboard';
+@import 'pages/inventory';
+@import 'pages/search';
+@import 'pages/store';
+@import 'pages/statistics';
+@import 'pages/welcome';
+
+
+@import 'util/animation';
+@import 'util/helper';

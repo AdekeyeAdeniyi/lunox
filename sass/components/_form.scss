@@ -1,0 +1,159 @@
+.form{
+    &-lonux{
+
+    }
+
+    &-icon {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 4rem;
+
+        @include respond(phone-land){
+            width: 60%;
+        }
+
+        .form-control {
+            background-color: #4f4f4f;
+            border-color: #4f4f4f;
+            border-radius: 8px;
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+
+        span {
+            position: absolute;
+            top: 13px;
+            right: 13px;
+        }
+    }
+
+    // form-zero is form without border
+    &-zero{
+        background: transparent;
+        border: none;
+        &:hover,
+        &:focus{
+            background: transparent;
+            outline: none;
+            box-shadow: none;
+            color: $accent;
+        }
+    }
+
+    &-search-lg{
+        background: lighten($dark, 10%);
+        padding: 0 1rem;
+        border-radius: .5rem;
+        position: relative;
+        display: flex;
+        
+        @include respond(tab){
+            padding: .5rem 2rem;
+            
+        }
+
+        .form-control{
+            border: none !important;
+        }
+
+        
+    }
+
+    &-control{
+
+        // padding: 1.5rem;
+        // border: 1px solid $gray-300;
+        
+        &-light{
+            background-color:lighten($dark, 80%);
+            // color: $gray-600;
+            
+            &:focus{
+                
+                background-color:lighten($dark, 80%);
+                // color: $gray-600;
+        
+                }
+        }
+        
+        &-dark{
+            background-color: darken($white, 80%) !important;
+            color: $accent;
+            border: none;
+            
+            
+            &:disabled{
+                background-color: darken($white, 85%);
+                color: darken($accent, 60%);
+            }
+
+            &:focus{
+                background-color: darken($white, 80%);
+                color: $accent;
+                border: none;
+            }
+
+        }
+    }
+
+    &-group{
+        &-auth{
+            margin-bottom: 1rem;
+            &-dark{
+                color: darken($accent, 40%);
+            }
+
+            label{
+                display: block;
+                margin: 0;
+                transition: transform .3s;
+                transform: translateY(-5rem)
+            }
+            
+            input:placeholder-shown ~ label{
+                transition: transform .3s;
+                transform: translateY(-4rem);
+                opacity: 0;
+                visibility: hidden;  
+                
+            }
+
+
+            
+        }
+    }
+}
+
+
+.input-group{
+    padding: .5rem 0;
+    border: none;
+    border-radius: 5px;
+
+    &-dark{
+        background-color: darken($white, 80%);
+        color: $accent;
+        border: none;
+
+        &:focus{
+            background-color: darken($white, 80%);
+            color: $accent;
+            border: none;
+        }
+
+    }
+
+    &-text{
+        border: none;
+        border-right: 1px solid darken($accent,60%);
+    }
+
+    .form-control{
+        background-color: transparent;
+    }
+
+}

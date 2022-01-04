@@ -1,0 +1,97 @@
+@keyframes arrowBounce{
+    0%{
+        transform: translateY(1rem);
+        fill: darken(#828282, 20%);
+    }
+    
+    60%{
+        fill: #828282;
+        transform: translateY(-1rem);
+    }
+    
+    100%{
+        fill: darken(#828282, 20%);
+        transform: translateY(1rem);
+        
+    }
+}
+
+@keyframes jumpUp{
+    0%{
+        transform: translateY(-10px);
+        color: $primary
+    }
+    
+    100%{
+        transform: translateY(0);
+        color: $dark;
+
+    }
+}
+
+@keyframes grow{
+    0%{
+        width: 50px;
+        height: 50px;
+    }
+
+    100%{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+
+
+// nav hover effect
+
+@keyframes navHoverBefore{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50px;
+    }
+}
+@keyframes navHoverAfter{
+    0%{
+        left: 16px;
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 75px
+    
+    }
+}
+
+
+.fade-enter-active {
+    transition: all .5s ease;
+}
+.fade-leave-active {
+    transition: all .5s ease;
+}
+.fade-enter, .fade-leave-to {
+    // transform: translateY(10px);
+    opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active{
+    transition: all .5s ease;
+}
+
+.slide-up-enter{
+    transform: translateY(1rem);
+    opacity: 0;
+}
+
+.slide-up-leave-to{
+    transform: translateY(0);
+    opacity: 0;
+}
+

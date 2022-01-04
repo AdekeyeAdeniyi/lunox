@@ -1,0 +1,165 @@
+.welcome{
+    background: $dark;
+    
+    .search-section{
+        text-align: center;
+        background: $dark;
+        padding-top: 2rem;
+        position: relative;
+        padding-bottom: 4rem !important;
+        
+        @include respond(tab){
+            height: calc(95vh - 108px);
+            padding-bottom: 0 !important;
+
+        }
+        &-suggestion{
+            width: 100%;
+            background-color: $white;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            &-item{
+                padding: 1rem 1.5rem;
+                color: $dark;
+                text-align: left;
+                width: 100%;
+                display: block;
+                transition: all .4s;
+                border: none;
+                background-color: $white;
+
+                &:hover{
+                    text-decoration: none;
+                    background-color: $accent;
+                }
+
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                }
+
+            }
+        }
+    }
+
+    &-logo{
+        width: auto;
+        height: 48px;
+        margin-bottom: 5rem;
+    }
+
+    &-title{
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+    .arrow-down-link{
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        svg{
+            animation: arrowBounce ease-in-out 2s infinite;
+            fill: #828282;
+        }
+    }
+
+
+    .info-section{
+        min-height: 100vh;
+        padding: 6rem 0;
+
+        img{
+            width: 342px;
+            display: block;
+            margin: 7rem auto;
+            margin-bottom: 0;
+        }
+
+        &-1{
+            background-color: lighten($primary, 30);
+            @include respond(tab){
+                
+            }
+        }
+
+        &-2{
+       
+            background-color: #ECF9F5;
+            @include respond(tab){
+                
+            }
+        }
+        &-3{
+            
+            background-color: $light;
+
+            @include respond(tab){
+              
+            }
+        }
+
+
+        &-img{
+            width: 80%;
+            height: auto;
+            
+        }
+
+        &-text{
+            padding: 2rem;
+            @include respond(tab){
+                padding: 6rem 2rem 0;
+
+            }
+
+            h2{
+                margin-bottom: 1rem;
+                color: $dark;
+            }
+            p{
+                
+            }
+        }
+    }
+
+    &-extra{
+        padding: 6rem 0;
+        &-cards{
+            margin-top: -8rem;
+            @include respond(desktop){
+                margin-top: -13rem;
+
+            }
+        }
+        &-card{
+            padding: 2rem;
+            background-color: $white;
+            border-radius: 1rem;
+          
+            margin-bottom: 2rem;
+          
+            &-img{   
+                    width: 100px;
+            }
+            h5{
+                margin-top: 2rem;
+                font-weight: 700;
+            }
+        }
+
+        &-grand{
+            padding: 8rem 0;
+
+            
+        }
+    }
+}

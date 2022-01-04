@@ -1,0 +1,15 @@
+.table{
+
+    margin: 3rem 0;
+    &-dashboard{
+        width: 100%;
+
+        tr{
+            transition: all .3s;
+            cursor: pointer;
+            &:hover{
+                background-color: $accent;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.sell_product,
+.get_product,
+.worker{
+    padding: 100px 0;
+
+    img {
+        margin-top: 110px;
+    }
+
+    p{
+        width: 100%;
+
+        @include respond(phone-land){
+            width: 70%;
+        }
+
+        @include respond(tab){
+            width: 60%;
+        }
+
+        @include respond(desktop){
+            width: 50%;
+        }
+    }
+}
+
+.sell_product {
+    background-color: #FFE8CC;
+}
+
+.get_product {
+    background-color: #ECF9F5;
+}
+
+.worker {
+    background-color: lighten(#FFE8CC, 30%);
+}
+
+.review{
+    &-text{
+        width: 100%;
+
+        @include respond(tab){
+            width: 80%;
+        }
+
+        @include respond(desktop){
+            width: 60%;
+        }
+    }
+} 

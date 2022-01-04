@@ -1,0 +1,46 @@
+.img{
+
+    &-brand{
+        height: 30px;
+        @include respond(tab){
+            height: 46px;
+        }
+    }
+    &-profile-avatar{
+        border-radius: 50%;
+        overflow: hidden;
+
+        &-sm{
+            width: 56px;
+            height: 56px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    &-container-round{
+        border-radius: 50%;
+        overflow: hidden;
+
+        &.result{
+            width: 8rem;
+            height: 8rem;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            // &.after-image{
+            //     width: 9rem;
+            //     height: 9rem;
+            // }
+        }
+    }
+
+    // &-product{
+    //     height: ;
+    // }
+}

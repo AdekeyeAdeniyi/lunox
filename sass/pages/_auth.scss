@@ -1,0 +1,14 @@
+.auth{
+    &-section{
+        padding: 6rem 0;
+        
+        @include respond(tab){
+            padding: 8rem 0;
+
+        }
+
+        .welcome-text{
+            margin-bottom: 3rem;
+        }
+    }
+}

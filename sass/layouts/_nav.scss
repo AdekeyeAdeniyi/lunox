@@ -1,0 +1,133 @@
+// sidebar
+.sidebar{
+    padding: 3rem 2rem 3rem 5rem;
+    width: 23rem;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: none;
+
+    .close{
+        display: none;
+        position: absolute;
+        top: 1rem;
+        right: .5rem;
+    }
+    &.opened{
+        display: block;
+        background-color: $light;
+        // box-shadow: $box-shadow-lg;
+    }
+    @include respond(desktop){
+        display: block;
+    }
+
+    &-head{
+        margin-bottom: 4rem;
+    }
+
+    &-extra{
+        margin-top: 4rem;
+        
+        .nav-item{
+            margin-left: 2.2rem;
+        }
+    }
+
+    .nav-item{
+        a{
+            color: $gray-600;
+            font-size: $font-size-base;
+            display: inline-flex;
+            padding: 0;
+            align-items: center;
+            transition: all .4s;
+
+            i.material-icons{
+                display: inline-block;
+                margin-right: 1rem;
+            }
+
+            &:hover{
+                color: $dark;
+                padding-left: 5px;
+                text-decoration: none;
+                i.material-icons{
+                    animation: jumpUp 1s;
+                }
+            }
+
+            &.active{
+                color: $dark;
+                font-weight: 600;
+            }
+        }
+
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+// topnav
+
+.topnav{
+    padding: 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: sticky;
+    // z-index: 2;
+    background-color: $accent;
+    top: 0;
+    left: 0;
+
+    @include respond(desktop){
+        padding: 3rem 0;
+    }
+
+
+    &-logo{
+        color: $dark
+    }
+    &-logo, 
+    &-toggler{
+        display: inline-block;
+        @include respond(desktop){
+            display: none;
+        }
+    }
+
+    form{
+        display: none;
+        @include respond(desktop){
+            display: inline-block;
+            flex:0 0 40%;
+        }
+    }
+
+    &-info{
+        display: none;
+        @include respond(desktop){
+            display: inline-flex;
+            align-items: center;
+    
+            a{
+                color: $dark;
+    
+                &:not(:last-child){
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .dropdown-menu{
+        top: 8px !important;
+        left: -7px !important;
+        border: none;
+        box-shadow:  0  1rem 2rem rgba($black, .1);
+    }
+}

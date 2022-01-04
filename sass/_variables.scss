@@ -1,0 +1,86 @@
+// Body
+$body-bg: #333333;
+
+// Typography
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+
+$primary:                   #FD961A;
+$secondary:                 #fef3e6;
+$dark:                      #111111;
+$accent:                    #F5F5F4;
+$light:                       $accent;
+$gray-800:                  #333333;
+$white:                     #ffffff;
+
+// Typography
+
+$yiq-text-light:              $accent;
+
+$h1-font-size:                $font-size-base * 2.9 !default;
+$h2-font-size:                $font-size-base * 2.2 !default;
+
+
+
+
+// typo small
+
+$h1-font-size-small:           $font-size-base * 2.5 !default;
+$h2-font-size-small:           $font-size-base * 1.8 !default;
+
+
+$subtitle:                     16px;
+$font-size-sm:                 12px;
+
+
+
+// button
+// $btn-border-radius:            0;
+// $btn-border-color:             transparent;
+$btn-font-size:                14px;
+$btn-font-weight:              700;
+$btn-padding-y:                .7rem;      
+$btn-padding-x:                2rem;
+$btn-line-height:              1.2;
+
+$btn-border-radius-lg:          0;
+$btn-border-color-lg:           transparent;
+$btn-font-size-lg:              14px;
+$btn-font-weight-lg:            700;
+$btn-line-height:               1.2;
+
+// $btn-padding-y-lg:              1rem;      
+// $btn-padding-x-lg:              3rem;
+
+
+// card
+$card-border-radius:            .5rem;
+
+
+
+
+// form
+// $input-color:                  $gray-800;
+// $input-border-radius:          0;
+// $input-border-width:           0;
+// $input-bg:                     $light;
+// $input-focus-bg:               $white;
+$input-height: 50px;
+$input-padding-x: 1rem;
+$input-padding-y: .5rem;
+
+
+
+// pagination
+
+$pagination-color:                  $gray-800;
+$pagination-bg:                     transparent;
+$pagination-border-width:           0;
+$pagination-border-color:           transparent;
+
+$pagination-active-color:           $primary;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    transparent;

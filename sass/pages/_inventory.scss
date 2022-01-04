@@ -1,0 +1,25 @@
+.inventory{
+
+    &-header{
+        // grid-template-row: 5fr 1fr;
+        // justify-content: space-between;
+        
+        @include respond(tab){
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            justify-content: space-between;
+
+        }
+
+        &-view{
+            display: flex;
+            align-items: center;
+
+            .icon{
+                display: inline-block;
+                margin-right: 1rem;
+            }
+        }
+    }
+    
+}

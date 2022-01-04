@@ -1,0 +1,21 @@
+.card{
+    &.overview-card{
+        margin-bottom: 1rem;
+        border: none;
+        transition: all .3s;
+        .card-header,
+        .card-footer{
+            border: none;
+            background-color: transparent;
+        }
+
+        .card-body, .card-footer{
+            text-align: center;
+        }
+
+        &:hover{
+            box-shadow: $box-shadow-sm;
+        }
+
+    }
+}

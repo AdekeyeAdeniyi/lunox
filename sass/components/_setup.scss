@@ -1,0 +1,26 @@
+.setup{
+    &Card{
+        border: none;
+        div[class^='card']{
+            background-color: $white;
+            border: none;
+        }
+
+        .card-header{
+            padding: 1.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            h6{
+                font-weight: 600;
+            }
+        }
+
+        .card-body{
+            padding: 0 1.5rem;
+            margin: 0;
+        }
+        .card-footer{
+            padding: 1.5rem;
+        }
+    }
+}

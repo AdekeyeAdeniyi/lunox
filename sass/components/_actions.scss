@@ -1,0 +1,67 @@
+.actions{
+
+
+    // delivery
+
+    &-delivery,
+    &-direction{
+        
+        padding: 1rem;
+    
+        @include respond(tab){
+            padding: 3rem;
+        }
+        .separator{
+            display: block;
+            height: 48px;
+            position: relative;
+            margin-bottom: 1rem;
+            width: auto;
+
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                background-color: $primary;
+                left: 1rem;
+                width: 1px;
+            }
+            &::before{
+                top: 0;
+                height: 30px;
+            }
+            &::after{
+                height: 12px;
+                bottom: 0;
+
+            }
+        }
+
+        .cart{
+
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            row-gap: 2rem;
+            margin-bottom: 3rem;
+            @include respond(tab){
+                grid-template-columns: 1fr 4fr;
+                column-gap: 2rem;
+                grid-template-rows: 1fr;
+
+            }
+            
+            &-image{
+                width: 130px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            .store-result-cart{
+                min-height: 169px !important;
+            }
+        }
+        
+    }
+}
