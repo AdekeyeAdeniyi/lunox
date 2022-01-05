@@ -13,7 +13,7 @@
         height: 100%;
         object-fit: cover;
         width: 100%;
-        position: relative
+        position: relative;
     }
 
     &-details{
@@ -21,5 +21,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
     }
 }
