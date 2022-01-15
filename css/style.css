@@ -7856,6 +7856,15 @@ input + .slider:before {
 .modal.right.fade.in .modal-dialog {
   right: 0; }
 
+.location-map {
+  width: 100%;
+  height: 195px; }
+
+.booking-details {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccc;
+  margin-bottom: 40px; }
+
 .footer {
   padding: 3rem; }
   .footer-abs {

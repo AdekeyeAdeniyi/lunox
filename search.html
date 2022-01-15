@@ -270,7 +270,7 @@
 
     <!-- Product Popup -->
     <div class="modal fade rounded-2" id="ProductPopUp" tabindex="-1" aria-labelledby="ProductPopUp" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header border-0">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -299,10 +299,9 @@
                                 <p class="mb-0 mt-2"> <span class="font-weight-bold"> Item name:</span> Apple Fruit </p>
                                 <p> N8,000 </p>
                                 <div class="btn-groups">
-                                    <a href="#" class="btn btn-primary text-white btn-lg rounded mt-2"> Book Now</a>
-                                    <a href="#" class="btn btn-secondary btn-lg rounded mt-2"> Get Directions</a>
-                                    <a href="#" class="btn btn-secondary btn-lg rounded mt-2" data-toggle="modal"
-                                        data-target="#AddToCart"> Add to cart</a>
+                                    <a href="#" class="btn btn-primary text-white btn-lg rounded mt-2" data-toggle="modal"data-target="#BookingPopUp"> Book Now</a>
+                                    <a href="#" class="btn btn-secondary btn-lg rounded mt-2" data-toggle="modal"data-target="#LocationPopUp"> Get Directions</a>
+                                    <a href="#" class="btn btn-secondary btn-lg rounded mt-2" data-toggle="modal"data-target="#AddToCart"> Add to cart</a>
                                 </div>
                             </div>
                         </div>
@@ -313,6 +312,44 @@
                         <a href="#" class="nav-link p-0"> Shop more</a>
                     </div>
                     <div class="prouct-item">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card border-0 bg-transparent" role="button">
+                                    <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid">
+                                    <div class="card-body p-1">
+                                        <p class="mb-0 text-md--2"> Naiji Grocery and food stuffss </p>
+                                        <p class="mb-0"> N8,000 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card border-0 bg-transparent" role="button">
+                                    <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid">
+                                    <div class="card-body p-1">
+                                        <p class="mb-0 text-md--2"> Naiji Grocery and food stuffss </p>
+                                        <p class="mb-0"> N8,000 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card border-0 bg-transparent" role="button">
+                                    <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid">
+                                    <div class="card-body p-1">
+                                        <p class="mb-0 text-md--2"> Naiji Grocery and food stuffss </p>
+                                        <p class="mb-0"> N8,000 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3">
+                                <div class="card border-0 bg-transparent" role="button">
+                                    <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid">
+                                    <div class="card-body p-1">
+                                        <p class="mb-0 text-md--2"> Naiji Grocery and food stuffss </p>
+                                        <p class="mb-0"> N8,000 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6 col-md-4 col-lg-3">
                                 <div class="card border-0 bg-transparent" role="button">
@@ -537,6 +574,134 @@
         </div>
     </div>
 
+    <!-- Location -->
+    <div class="modal fade rounded-2" id="LocationPopUp" tabindex="-1" aria-labelledby="LocationPopUp" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered location modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-sm-5">
+                    <div class="location-details">
+                        <p class="text-md m-0"> Your Loaction </p>
+                        <p class="text-md text-light-2"> Yakima, Delaware 23307 Abuja </p>
+                        <div class="vertical-break">
+                         <svg width="1" height="48" viewBox="0 0 1 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <line x1="0.5" y1="36" x2="0.500001" y2="48" stroke="#FD961A"/>
+                             <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="30" stroke="#FD961A"/>
+                         </svg>                        
+                        </div>
+                        <p class="mb-0 mt-3 text-md"> Collar Store </p>
+                        <p class="text-md text-light-2"> 6513 Dogwood Ave undefined Syracuse, Alaska 62927 United States </p>
+                    </div>
+                   <div class="location-map">
+                        <img src="assets/images/map.png" alt="" class="img-fluid w-100">
+                   </div>
+                   <div class="d-flex justify-content-sm-end mb-5 flex-wrap">
+                        <a href="#" class="btn btn-secondary btn-lg rounded mt-2 mr-3" role="button"> Car Directions</a>
+                        <a href="#" class="btn btn-secondary btn-lg rounded mt-2" role="button"> Walk Direction</a>
+                    </div>
+                    <div class="mb-4"> <span class="font-weight-bold"> Item name:</span> Apple Fruit </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-3">
+                            <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid"> 
+                        </div>
+                        <div class="col-md-4">
+                            <p class="mb-0 text-lg"> Avocodo pear </p>
+                            <p class="mb-0 text-md"> N7,000  </p>
+                        </div>
+                        <div class="col-md-3 text-md-center">
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.41 0.0898438L6 4.66984L10.59 0.0898438L12 1.49984L6 7.49984L0 1.49984L1.41 0.0898438Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+    
+                            <span class="px-2"> 1 </span>
+    
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.59 7.91016L6 3.33016L1.41 7.91016L1.23266e-07 6.50016L6 0.500156L12 6.50016L10.59 7.91016Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="nav-link px-0 ml-auto text-md-center" role="button"> remove</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 mb-5">
+                        <a href="#" class="btn btn-primary btn-lg rounded mt-2 mr-3" role="button"> Book Now </a>
+                        <span class="text-light-2 text-md">Order will expire after 48hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking -->
+    <div class="modal fade rounded-2" id="BookingPopUp" tabindex="-1" aria-labelledby="BookingPopUp" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered booking modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-sm-5">
+                    <div class="booking-details">
+                        <p class="text-md m-0"> Your Loaction </p>
+                        <p class="text-md text-light-2"> Yakima, Delaware 23307 Abuja </p>
+                        <div class="vertical-break">
+                         <svg width="1" height="48" viewBox="0 0 1 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <line x1="0.5" y1="36" x2="0.500001" y2="48" stroke="#FD961A"/>
+                             <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="30" stroke="#FD961A"/>
+                         </svg>                        
+                        </div>
+                        <p class="mb-0 mt-3 text-md"> Collar Store </p>
+                        <p class="text-md text-light-2"> 6513 Dogwood Ave undefined Syracuse, Alaska 62927 United States </p>
+                    </div>
+
+                    <div class="mb-4"> <span class="font-weight-bold"> Item name:</span> Apple Fruit </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-3">
+                            <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid"> 
+                        </div>
+                        <div class="col-md-4">
+                            <p class="mb-0 text-lg"> Avocodo pear </p>
+                            <p class="mb-0 text-md"> N7,000  </p>
+                        </div>
+                        <div class="col-md-3 text-md-center">
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.41 0.0898438L6 4.66984L10.59 0.0898438L12 1.49984L6 7.49984L0 1.49984L1.41 0.0898438Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+    
+                            <span class="px-2"> 1 </span>
+    
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.59 7.91016L6 3.33016L1.41 7.91016L1.23266e-07 6.50016L6 0.500156L12 6.50016L10.59 7.91016Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="nav-link px-0 ml-auto text-md-center" role="button"> remove</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 mb-5">
+                        <a href="#" class="btn btn-primary btn-lg rounded mt-2 mr-3" role="button"> Book Now </a>
+                        <span class="text-light-2 text-md">Order will expire after 48hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

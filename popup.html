@@ -8,84 +8,149 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Lunox</title>
 </head>
-<body>
+<body style="background-color: aliceblue;">
+
     <div class="container-fluid">
-        <header class="header">
-            <div class="wrapper">
-                <nav class="navigation">
-                    <div class="nav-icon">
-                        <span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 0.480469C5.63758 0.480469 0.47998 5.63807 0.47998 12.0005C0.47998 18.3629 5.63758 23.5205 12 23.5205C18.3624 23.5205 23.52 18.3629 23.52 12.0005C23.52 5.63807 18.3624 0.480469 12 0.480469ZM16.686 9.91727C16.6908 10.0157 16.692 10.1141 16.692 10.2101C16.692 13.2101 14.4108 16.6673 10.2372 16.6673C9.00393 16.6693 7.79634 16.3151 6.75958 15.6473C6.93598 15.6689 7.11718 15.6773 7.30078 15.6773C8.36398 15.6773 9.34198 15.3161 10.1184 14.7065C9.64524 14.6972 9.18679 14.5405 8.80691 14.2583C8.42704 13.9761 8.14468 13.5824 7.99918 13.1321C8.33897 13.1967 8.689 13.1831 9.02278 13.0925C8.50924 12.9886 8.04742 12.7104 7.71563 12.3049C7.38384 11.8994 7.20251 11.3916 7.20238 10.8677V10.8401C7.50838 11.0093 7.85878 11.1125 8.23078 11.1245C7.74934 10.804 7.40852 10.3117 7.27803 9.74823C7.14755 9.18478 7.23724 8.59277 7.52878 8.09327C8.09873 8.79407 8.80949 9.36736 9.61506 9.77604C10.4206 10.1847 11.303 10.4197 12.2052 10.4657C12.0905 9.97884 12.1399 9.46776 12.3456 9.01187C12.5513 8.55599 12.9019 8.18086 13.3429 7.94479C13.7838 7.70871 14.2904 7.62494 14.7839 7.70647C15.2773 7.78801 15.73 8.0303 16.0716 8.39567C16.5794 8.2952 17.0664 8.10893 17.5116 7.84487C17.3423 8.37063 16.988 8.81708 16.5144 9.10127C16.9642 9.04709 17.4034 8.92616 17.8176 8.74247C17.5134 9.19834 17.1301 9.59619 16.686 9.91727Z" fill="#999999"/>
-                            </svg>                            
-                        </span>
-                        <span>
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.0012 2.16797C7.01903 2.16797 2.16895 7.01805 2.16895 13.0002C2.16895 18.4061 6.12961 22.8867 11.309 23.7025V16.1321H8.55736V13.0002H11.309V10.6136C11.309 7.89664 12.9264 6.39839 15.3997 6.39839C16.5849 6.39839 17.8264 6.60964 17.8264 6.60964V9.27355H16.457C15.1137 9.27355 14.6934 10.1099 14.6934 10.9668V12.9981H17.6953L17.2154 16.13H14.6934V23.7003C19.8728 22.8889 23.8334 18.4071 23.8334 13.0002C23.8334 7.01805 18.9834 2.16797 13.0012 2.16797Z" fill="#999999"/>
-                            </svg>                                                        
-                        </span>
-    
-                        <ul class="nav-menu">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Sign up</a>
-                            </li>
-                        </ul>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ProductPopUp">
+            Launch demo modal
+        </button>
+        
+           <!-- Product Popup -->
+     <div class="modal fade rounded-2" id="ProductPopUp" tabindex="-1" aria-labelledby="ProductPopUp" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered location modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-sm-5">
+                    <div class="location-details">
+                        <p class="text-md m-0"> Your Loaction </p>
+                        <p class="text-md text-light-2"> Yakima, Delaware 23307 Abuja </p>
+                        <div class="vertical-break">
+                         <svg width="1" height="48" viewBox="0 0 1 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <line x1="0.5" y1="36" x2="0.500001" y2="48" stroke="#FD961A"/>
+                             <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="30" stroke="#FD961A"/>
+                         </svg>                        
+                        </div>
+                        <p class="mb-0 mt-3 text-md"> Collar Store </p>
+                        <p class="text-md text-light-2"> 6513 Dogwood Ave undefined Syracuse, Alaska 62927 United States </p>
                     </div>
-                </nav>
-    
-                <div class="herobox">
-                    <div class="brand-logo">
-                        <img src="assets/images/lonux logo.svg" class="img-responsive" alt="lgog" />
+                   <div class="location-map">
+                        <img src="assets/images/map.png" alt="" class="img-fluid w-100">
+                   </div>
+                   <div class="d-flex justify-content-sm-end mb-5 flex-wrap">
+                        <a href="#" class="btn btn-secondary btn-lg rounded mt-2 mr-3" role="button"> Car Directions</a>
+                        <a href="#" class="btn btn-secondary btn-lg rounded mt-2" role="button"> Walk Direction</a>
                     </div>
-                    <form action="#">
-                        <label for="search" class="form-icon">
-                            <input type="text" class="form-control" name="search" id="search" placeholder="Search  for what you need. e.g. Apple" />
+                    <div class="mb-4"> <span class="font-weight-bold"> Item name:</span> Apple Fruit </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-3">
+                            <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid"> 
+                        </div>
+                        <div class="col-md-4">
+                            <p class="mb-0 text-lg"> Avocodo pear </p>
+                            <p class="mb-0 text-md"> N7,000  </p>
+                        </div>
+                        <div class="col-md-3 text-md-center">
                             <span>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="#F2F2F2"/>
-                                </svg>                                    
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.41 0.0898438L6 4.66984L10.59 0.0898438L12 1.49984L6 7.49984L0 1.49984L1.41 0.0898438Z" fill="#4F4F4F"/>
+                                </svg>                                
                             </span>
-                        </label>
-                    </form>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+                            <span class="px-2"> 1 </span>
+    
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.59 7.91016L6 3.33016L1.41 7.91016L1.23266e-07 6.50016L6 0.500156L12 6.50016L10.59 7.91016Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="nav-link px-0 ml-auto text-md-center" role="button"> remove</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 mb-5">
+                        <a href="#" class="btn btn-primary btn-lg rounded mt-2 mr-3" role="button"> Book Now </a>
+                        <span class="text-light-2 text-md">Order will expire after 48hrs</span>
+                    </div>
                 </div>
             </div>
-        </header>
-
-        <main class="main">
-            <div class="wrapper">
-                <section class="sell_product">
-                    <h3> Sell your product </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar nunc feugiat felis velit. Et tempus nulla fusce nibh commodo ridiculus ultricies sit. Urna aliquam lectus feugiat.  </p>
-    
-                    <div class="sell_product__image">
-                        <img src="assets/images/shop.svg" class="img-responsive" alt="product image" />
-                    </div>
-                </section>
-    
-                <section class="get_product">
-                    <h3> Get what you are looking for faster </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar nunc feugiat felis velit. Et tempus nulla fusce nibh commodo ridiculus ultricies sit. Urna aliquam lectus feugiat.  </p>
-    
-                    <div class="get_product__image">
-                        <img src="assets/images/buy.svg" class="img-responsive" alt="product image" />
-                    </div>
-                </section>
-    
-                <section class="worker">
-                    <h3> Become a worker instantly </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar nunc feugiat felis velit. Et tempus nulla fusce nibh commodo ridiculus ultricies sit. Urna aliquam lectus feugiat.  </p>
-    
-                    <div class="worker__image">
-                        <img src="assets/images/job.svg" class="img-responsive" alt="product image" />
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <div class="footer">
-            <p> copyright (C) 2020 </p>
         </div>
     </div>
+     <div class="modal fade rounded-2" id="" tabindex="-1" aria-labelledby="ProductPopUp" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered booking modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-sm-5">
+                    <div class="booking-details">
+                        <p class="text-md m-0"> Your Loaction </p>
+                        <p class="text-md text-light-2"> Yakima, Delaware 23307 Abuja </p>
+                        <div class="vertical-break">
+                         <svg width="1" height="48" viewBox="0 0 1 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <line x1="0.5" y1="36" x2="0.500001" y2="48" stroke="#FD961A"/>
+                             <line x1="0.5" y1="2.18557e-08" x2="0.499999" y2="30" stroke="#FD961A"/>
+                         </svg>                        
+                        </div>
+                        <p class="mb-0 mt-3 text-md"> Collar Store </p>
+                        <p class="text-md text-light-2"> 6513 Dogwood Ave undefined Syracuse, Alaska 62927 United States </p>
+                    </div>
+
+                    <div class="mb-4"> <span class="font-weight-bold"> Item name:</span> Apple Fruit </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-3">
+                            <img src="assets/images/Capture 4.jpg" alt="" class=" rounded img-fluid"> 
+                        </div>
+                        <div class="col-md-4">
+                            <p class="mb-0 text-lg"> Avocodo pear </p>
+                            <p class="mb-0 text-md"> N7,000  </p>
+                        </div>
+                        <div class="col-md-3 text-md-center">
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.41 0.0898438L6 4.66984L10.59 0.0898438L12 1.49984L6 7.49984L0 1.49984L1.41 0.0898438Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+    
+                            <span class="px-2"> 1 </span>
+    
+                            <span>
+                                <svg role="button" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.59 7.91016L6 3.33016L1.41 7.91016L1.23266e-07 6.50016L6 0.500156L12 6.50016L10.59 7.91016Z" fill="#4F4F4F"/>
+                                </svg>                                
+                            </span>
+                        </div>
+                        <div class="col-md-2">
+                            <a class="nav-link px-0 ml-auto text-md-center" role="button"> remove</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 mb-5">
+                        <a href="#" class="btn btn-primary btn-lg rounded mt-2 mr-3" role="button"> Book Now </a>
+                        <span class="text-light-2 text-md">Order will expire after 48hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 </html>
